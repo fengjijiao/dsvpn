@@ -1,0 +1,1 @@
+ -march=native -mtune=native -Ofast -Wno-unused-command-line-argument
