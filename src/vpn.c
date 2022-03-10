@@ -574,7 +574,7 @@ __attribute__((noreturn)) static void usage(void)
          "\n"
          "dsvpn -c config.json\n\n"
          "Example:\n\n[server]\n\tdd if=/dev/urandom of=vpn.key count=1 bs=32\t# create key\n"
-         "\tbase64 < vpn.key\t\t# copy key as a string\n\tsudo ./dsvpn -c config\t"
+         "\tbase64 < vpn.key\t\t# copy key as a string\n\tsudo ./dsvpn -c config.json\t"
          "\n\n[client]\n\techo ohKD...W4= | base64 --decode > vpn.key\t# paste key\n"
          "\tsudo ./dsvpn -c config.json\n");
     exit(254);

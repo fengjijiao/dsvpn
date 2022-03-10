@@ -90,23 +90,18 @@ Or send a pull request implementing the required commands to change and revert t
 ## Advanced configuration
 
 ```text
-dsvpn   "server"
-        <key file>
-        <vpn server ip or name>|"auto"
-        <vpn server port>|"auto"
-        <tun interface>|"auto"
-        <local tun ip>|"auto"
-        <remote tun ip>"auto"
-        <external ip>|"auto"
-
-dsvpn   "client"
-        <key file>
-        <vpn server ip or name>
-        <vpn server port>|"auto"
-        <tun interface>|"auto"
-        <local tun ip>|"auto"
-        <remote tun ip>|"auto"
-        <gateway ip>|"auto"
+{
+    "mode": "server",
+    "key": "./vpn.key",
+    "host": "0.0.0.0",
+    "port": "9000",
+    "tun_interface" : "auto",
+    "local_tun_ip" : "auto",
+    "remote_tun_ip" : "auto",
+    "ipv6_prefix" : "auto",
+    "external_ip" : "auto",
+    "gateway_ip" : "auto"
+}
 ```
 
 * `server`|`client`: use `server` on the server, and `client` on clients.
