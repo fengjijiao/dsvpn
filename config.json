@@ -1,0 +1,12 @@
+{
+    "mode": "server",
+    "key": "./vpn.key",
+    "host": "0.0.0.0",
+    "port": "9000",
+    "tun_interface" : "auto",
+    "local_tun_ip" : "auto",
+    "remote_tun_ip" : "auto",
+    "ipv6_prefix" : "auto",
+    "external_ip" : "auto",
+    "gateway_ip" : "auto"
+}
